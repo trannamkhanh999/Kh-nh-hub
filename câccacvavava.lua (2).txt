@@ -1,0 +1,591 @@
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
+ImageButton.Size = UDim2.new(0, 40, 0, 40)
+ImageButton.Draggable = true
+ImageButton.Image = "http://www.roblox.com/asset/?id=133050974705583"
+
+UICorner.CornerRadius = UDim.new(1, 10) 
+UICorner.Parent = ImageButton
+
+ImageButton.MouseButton1Down:Connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
+end)
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+repeat wait() until game:IsLoaded()
+local Window = Fluent:CreateWindow({
+    Title = "khánh roblox Tổng Hợp",
+    SubTitle = "Blox Fruit",
+    TabWidth = 157,
+    Size = UDim2.fromOffset(450, 300),
+    Acrylic = true,
+    Theme = "Amethyst",
+    MinimizeKey = Enum.KeyCode.End
+})
+local Tabs = {
+        Main0=Window:AddTab({ Title="Thông Tin" }),
+        Main1=Window:AddTab({ Title="Script Farm" }),
+        Main2=Window:AddTab({ Title="Farm Fruit" }),
+        Main3=Window:AddTab({ Title="Farm Chest" }),
+        Main4=Window:AddTab({ Title="Script Hop" }),
+       Main5=Window:AddTab({ Title="farm bounty" }),
+       Main6=Window:AddTab({ Title="script up v4" }),
+       Main7=Window:AddTab({ Title="script kaitun" }),
+}
+    Tabs.Main0:AddButton({
+    Title = "Discord",
+    Description = "giao lưu và chơi game",
+    Callback = function()
+        setclipboard("https://discord.gg/TtzJeVswRg")
+    end
+})
+
+    Tabs.Main0:AddButton({
+    Title = "Youtuber",
+    Description = "trannamkhanh",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@trannamkhanhdeptrai")
+    end
+})
+
+    Tabs.Main0:AddButton({
+    Title = "Youtuber",
+    Description = "khánh roblox",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@khanhroblox_hacker")
+    end
+})
+    
+    Tabs.Main1:AddButton({
+    Title="Redz Hub",
+    Description="",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="GreenZ Hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/GreenZ-Hub/refs/heads/main/KaitunDoughKing.lua"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="quantum",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
+  end
+})
+Tabs.Main1:AddButton({
+    Title="hiru hub",
+    Description="",
+    Callback=function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/NGUYENVUDUY1/Dev-Hiru/refs/heads/main/HiruHub.lua"))()
+   end
+})
+
+Tabs.Main4:AddButton({
+    Title="Vxeze Hop",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/VxezeHubHopBoss/refs/heads/main/SkidConCacBaM"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="BlueX Hub",
+    Description="",
+    Callback=function()
+	   loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/EN.lua"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="Monster Hub",
+    Description="",
+    Callback=function()
+	   loadstring(game:HttpGet("https://raw.githubusercontent.com/giahuy2511-coder/MonsterHub/refs/heads/main/MonsterHub"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="văn thành hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/OniiChanVanThanhIOS/refs/heads/main/VanThanhIOS2027Online"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="xero Hub",
+    Description="",
+    Callback=function()
+	  getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+  end
+})
+
+Tabs.Main5:AddButton({
+    Title="farm bounty",
+    Description="",
+    Callback=function()
+	  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Team = "Pirates"
+getgenv().Config = {
+    ["Safe Health"] = {30},
+    ["Custom Y Run"] = {
+        Enabled = true,
+        ["Y Run"] = 5000
+    },
+    ["Hunt Method"] = {
+        ["Use Move Predict"] = false,
+        ["Hit and Run"] = false,
+        ["Aimbot"] = true,
+        ["ESP Player"] = true,
+        ["Max Attack Time"] = 60
+    },
+    ["Stats"] = {
+        ["Enable"] = false,
+        ["Reset Stats"] = false,
+        ["Point"] = {
+            ["Points per lift"] = nil,
+            ["Melee"] = nil,
+            ["Defence"] = nil,
+            ["Sword"] = nil,
+            ["Gun"] = nil,
+            ["Devil Fruit"] = nil
+        }
+    },
+    ["Shop"] = {
+        ["Random Fruit"] = false,
+        ["Store Fruit"] = true,
+        ["Zoro Sword"] = false
+    },
+    ["Theme"] = {
+    Name = "Hutao",
+    UIUrl = "",
+    Custom = {
+        ["Enable"] = false,
+        ["title_color"] = Color3.fromRGB(255, 221, 252),
+        ["titleback_color"] = Color3.fromRGB(169, 20, 255),
+        ["list_color"] = Color3.fromRGB(255, 221, 252),
+        ["liststroke_color"] = Color3.fromRGB(151, 123, 207),
+        ["button_color"] = Color3.fromRGB(255, 221, 252),
+        ["title_font"] = Enum.Font.FredokaOne,
+        ["text_font"] = Enum.Font.Gotham,
+        ["title_size"] = 40,
+        ["text_size"] = 24
+        }
+    },
+    ["Setting"] = {
+        ["World"] = 3,
+        ["White Screen"] = false,
+        ["Fast Delay"] = 0.5,
+        ["Tween Speed"] = 350,
+        ["FPS BOOSTER"] = false,
+        ["Url"] = "",
+        ["Chat"] = {
+            Enabled = false,
+            Wait = 350,
+            Massage = {""}
+        }
+    },
+    ["Skip"] = {
+        ["Avoid V4"] = false,
+        ["Fruit"] = {
+            ["Enabled"] = true,
+            ["Avoid Fruit"] = {
+                "Portal-Portal",
+                "Kitsune-Kitsune"
+            }
+        }
+    },
+    ["Spam All Skill On V4"] = {
+        Enabled = true,
+        ["Weapons"] = {"Melee", "Sword", "Gun", "Blox Fruit"}
+    },
+    ["Items"] = {
+        ["Use"] = {"Melee", "Sword", "Gun", "Blox Fruit"},
+        ["Melee"] = {
+            Enable = true,
+            Delay = 0.4,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.3},
+                X = {Enable = true, HoldTime = 0.2},
+                C = {Enable = true, HoldTime = 0.5}
+            }
+        },
+        ["Sword"] = {
+            Enable = true,
+            Delay = 0.5,
+            Skills = {
+                Z = {Enable = true, HoldTime = 1},
+                X = {Enable = true, HoldTime = 0}
+            }
+        },
+        ["Gun"] = {
+            Enable = false,
+            Delay = 0.3,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.1},
+                X = {Enable = true, HoldTime = 0.1}
+            }
+        },
+        ["Blox Fruit"] = {
+            Enable = false,
+            Delay = 0.4,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.1},
+                X = {Enable = true, HoldTime = 0.1},
+                C = {Enable = true, HoldTime = 0.15},
+                V = {Enable = true, HoldTime = 0.2},
+                F = {Enable = true, HoldTime = 0.1}
+            }
+        }
+    }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e80e11cce2599152482a2d3e7d6b99d7.lua"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="farm fruit",
+    Description="",
+    Callback=function()
+	  getgenv().Config = {
+    ["Misc"] = {
+        ["RandomFruits"] = true,
+        ["BlackScreen"] = false,
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/FindFruits.lua"))()
+  end
+})
+
+Tabs.Main6:AddButton({
+    Title="cokka Hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="hoho hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RuBuBFVn"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="skull hub",
+    Description="",
+    Callback=function()
+	  getgenv().SH_Settings = {
+        ["MainConfig"] = {
+            ["Enable Farm"] = true,
+            ["Version Farm"] = "1", -- Version 1 Very Fast 2 Slow But Safe
+            ["Sniper Legendary Item"] = false
+        },
+        ["Settings"] = {
+            ["Choose Team"] = "Marines",
+            ["White Screen"] = false,
+            ["Reset Anti Detect"] = true,
+            ["Time Checker"] = 300, -- Check Time For Next Server
+            ["Hop 2"] = false,
+            ["Webhook"] = {
+                ["Enable Webhook"] = false,
+                ["Link"] = "", -- Discord Webhook Link
+                ["Thumbnail"] = "",
+                ["Lock Beli"] = 1000000000,
+                ["Ping User ID"] = "everyone" -- Only ID
+            }
+        },
+        ["FruitSniper"] = {
+            ["Enable Sniper Fruit"] = false,
+            ["Fruit"] = {
+                "Leopard-Leopard",
+                "Kitsune-Kitsune",
+                "Dragon-Dragon",
+                "Yeti-Yeti"
+            }
+        },
+        ["Legendary Sword"] = {
+            ["Enable Auto Buy"] = false
+        },
+        ["Aura Haki"] = {
+            ["Enable Auto Buy"] = false
+        }
+    }
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xxhumggxx/SkullHub/refs/heads/main/ChestV2.lua"))()
+  end
+})
+
+Tabs.Main7:AddButton({
+    Title="royx kaitun",
+    Description="",
+    Callback=function()
+	  getgenv().ConfigsKaitun = {
+	["Safe Mode"] = false, -- Will be pass all anti cheat (but slow farm)
+	
+	["Melee"] = {
+		["Death Step"] = true,
+		["Electric Claw"] = true,
+		["Dragon Talon"] = true,
+		["Sharkman Karate"] = true,
+		["Superhuman"] = true,
+		["God Human"] = true,
+	},
+
+	["Sword"] = {
+		-- : World 1
+		["Saber"] = true,
+		["Pole"] = true,
+		-- : World 2
+		["Midnight Blade"] = false,
+		["Shisui"] = false,
+		["Saddi"] = false,
+		["Wando"] = false,
+		["Rengoku"] = true,
+		["True Triple Katana"] = false,
+		-- : World 3
+		["Yama"] = true,
+		["Tushita"] = true,
+		["Canvander"] = true,
+		["Buddy Sword"] = true,
+		["Twin Hooks"] = true,
+		["Hallow Scythe"] = true,
+		["Cursed Dual Katana"] = true,
+	},
+
+	["Gun"] = {
+		-- : World 2
+		["Kabucha"] = false,
+		-- : World 3
+		["Venom Bow"] = true,
+		["Skull Guitar"] = true,
+	},
+
+	["Mastery"] = {
+		["Melee"] = true,
+		["Sword"] = true,
+		["Devil Fruits"] = false,
+
+		["Configs"] = {
+			["Selected All Sword"] = true,
+			["Select Sword"] = {"Cursed Dual Katana"},
+		}
+	},
+
+	["Race"] = {
+		["v2"] = true,
+		["v3"] = true,
+		["Locked"] = {
+			["Mink"] = true,
+			["Human"] = true,
+			["Skypiea"] = true,
+			["Fishman"] = false,
+		},
+	},
+
+	["Fruit"] = {
+		["Main Fruit"] = {"Dragon-Dragon"},
+		["Sec Fruit"] = {"Dragon-Dragon"},
+		["Safe Fruit"] = {
+			"Dough-Dough",
+			"Dragon-Dragon"
+		},
+	},
+
+	["Quest"] = {
+		["Rainbow Haki"] = true,
+		["Pull Lever"] = true,
+		["Musketeer Hat"] = true,
+		["Dough Mirror"] = true,
+		["Shark Anchor"] = {
+			["Enable"] = false,
+			["Money"] = 25_000_000,
+		},
+	},
+
+	["Currency"] = {
+		["Lock Fragment"] = 25_000,
+	},
+
+	["Performance"] = {
+		["White Screen"] = false,
+		["Booster FPS"] = false,
+		["Lock FPS"] = 240,
+		["AFK Timeout"] = 150,
+	},
+}
+loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
+  end
+})
+
+Tabs.Main7:AddButton({
+    Title="rise hub kaitun",
+    Description="",
+    Callback=function()
+	  _G.Config = {
+
+    ["Melee"] = {
+
+        ["Superhuman"] = true,
+
+        ["Death Step"] = true,
+
+        ["Sharkman Karate"] = true,
+
+        ["Electric Claw"] = true,
+
+        ["Dragon Talon"] = true,
+
+        ["Godhuman"] = true
+
+    },
+
+    ["Sword"] = {
+
+        ["Saber"] = true,
+
+        ["Rengoku"] = true,
+
+        ["Canvander"] = true,
+
+        ["Buddy Sword"] = true,
+
+        ["Yama"] = true,
+
+        ["Tushita"] = true,
+
+        ["True Triple Katana"] = true,
+
+        ["Cursed Dual Katana"] = true
+
+    },
+
+    ["Gun"] = {
+
+        ["Kabucha"] = true,
+
+        ["Acidum Rifle"] = true,
+
+        ["Serpent Bow"] = true
+
+    },
+
+    ["Mastery"] = {
+
+        ["Sword"] = true
+
+    },
+
+    ["Setting"] = {
+
+        ["Enabled"] = true,
+
+        ["Bring Mob [Less Lag]"] = true,
+
+        ["Hop Server"] = true,
+
+        ["Reduce Lag"] = true,
+
+        ["Notifycation Remove"] = true,
+
+        ["Hop When Player Nearby"] = {
+
+            ["Enabled"] = true,
+
+            ["Radius"] = 350
+
+        }
+
+    }
+
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrashLua/BloxFruits/main/KaitunBeta.RiseEvo"))();
+  end
+})
+
+Tabs.Main7:AddButton({
+    Title="xero hub kaitun",
+    Description="",
+    Callback=function()
+	  script_key = "" -- premium only, u can leave it blank if ur not
+getgenv().Shutdown = false -- Turn on if u are farming bulk accounts
+getgenv().Configs = {
+    ["Team"] = "Marines",
+    ["Gun Farm"] = false, -- Fast farm level, but farming melee is slow
+    ["FPS Boost"] = {
+        ["Enable"] = false,
+        ["FPS Cap"] = 30,
+    },
+    ["Farm Boss Drops"] = {
+        ["Enable"] = false,
+        ["When x2 Exp Expired"] = false
+    },
+    ["Hop"] = {
+        ["Enable"] = true,
+        ["Hop Find Tushita"] = true
+    },
+    ["Auto Collect Berry"] = false,
+    ["Auto Evo Race"] = true,
+    ["Awaken Fruit"] = true,
+    ["Rainbow Haki"] = false,
+    ["Hop Player Near"] = true,
+    ["Skull Guitar"] = true,
+    ["Find Fruit"] = false, -- Will find 1m+ fruit to unlock swan door to access third sea
+    ["Cursed Dual Katana"] = true,
+    ["Switch Melee"] = true,
+    ["Eat Fruit"] = "", -- leave blank for none, put the fruit name like this example: Smoke Fruit, T-Rex Fruit, ...
+    ["Snipe Fruit"] = "", -- leave blank for none, put the fruit name like this example: Smoke Fruit, T-Rex Fruit, ...
+    ["Lock Fragment"] = 0,
+    ["Buy Stuffs"] = true -- buso, geppo, soru, ...
+}
+repeat task.wait() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/kaitun.lua"))() end) until getgenv().Check_Execute
+
+  end
+})
+
+Tabs.Main7:AddButton({
+    Title="mukuro hub",
+    Description="",
+    Callback=function()
+	  getgenv().Mode = "OneClick"
+getgenv().Setting = {
+    ["Team"] = "Marines", -- Options "Pirates", "Marines"
+    ["FucusOnLevel"] = true,
+    ["Fruits"] = {  -- setting for fruits u want
+        ["Primary"] = { -- if current fruit is not in this list, eat/buy
+            "Dragon-Dragon",
+            -- u can configs add mores/remove and must end with , (comma symbol)
+        },
+        ["Normal"] = { -- it just a normal fruit list
+            "Dragon-Dragon",
+            -- u can configs add mores/remove and must end with , (comma symbol)
+        }
+        -- run this for get all fruit name `local t={};for _,v in pairs(game.ReplicatedStorage.Remotes.CommF_:InvokeServer("GetFruits"))do table.insert(t,`"{v.Name}"`)end;setclipboard(table.concat(t, "\n"))`
+    },
+    ["IdleCheck"] = 150, -- every (x) seconds if not moving rejoin
+};
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
+  end
+})
